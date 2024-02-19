@@ -32,3 +32,16 @@ Testing on Sample Images:
     The image is loaded, converted to grayscale, resized to 28x28 pixels, and normalized.
     The model predicts the digit in the image using model.predict.
     The predicted class index is obtained by finding the index with the highest probability.
+
+
+In the Keras API, the Sequential model is a linear stack of layers, where you can simply add one layer at a time. It represents a linear pipeline of neural network layers, and it is suitable for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
+
+Here's a brief explanation of the Sequential model and its layers:
+
+    Sequential Model:
+        The Sequential model is a linear stack of layers in Keras.
+        You can create a Sequential model and add layers to it using the add method.
+
+    Sequential Layers:
+        In a Sequential model, each layer has a single input tensor and produces a single output tensor.
+        Layers can be added to the model one after the other, and Keras will automatically infer the input shape of each layer.
